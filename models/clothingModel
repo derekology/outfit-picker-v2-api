@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+
+const clothingSchema = new mongoose.Schema({
+    owner: String,
+    type: String,
+    article: String,
+    colour: String,
+    weight: String,
+    imageUrl: String,
+    isAvailable: Boolean
+});
+
+const userModule = mongoose.model('clothes', clothingSchema);
+
+module.exports = userModule
