@@ -1,5 +1,4 @@
 # Outfit Picker V2 API
-
 ## Introduction
 
 Outfit Picker V2 API is a server-side application designed to provide an API interface for the [Outfit Picker V2 client](https://github.com/derekology/outfit-picker-v2-client) to manage the outfits in a MongoDB database. It allows the app to interact with the database by sending requests to add, remove, or retrieve outfit documents based on specified queries.
@@ -35,6 +34,7 @@ cd outfit-picker-v2-api
 npm install
 ```
 ### Configuration
+
 The API requires certain configuration options to connect to the MongoDB database and set up authentication and authorization. Before running the application, make sure to add a .env file in the root with the following details:
 
 - PROD_URL: Production URL for CORS (or empty string)
@@ -47,6 +47,7 @@ The API requires certain configuration options to connect to the MongoDB databas
 - PROD_URL: MongoDB connection string
 
 ### Usage
+
 To start the Outfit Picker V2 API server, run the following command:
 
 ```bash
@@ -54,12 +55,14 @@ node server.js
 ```
 The API server will start listening on the configured port, and you can now send requests to the provided endpoints.
 
-### API Endpoints
+## API Endpoints
+
 The API provides the following endpoints to manage outfits:
 - POST '/addClothing': Adds a document based on a query object sent in the request body containing 'owner', 'type', 'article', 'colour', 'weight', 'imageUrl', and 'isAvailable' values. 
 - POST '/getClothing': Retrieves documents based on a query object sent in the request body.
 - POST '/updateClothing': Updates a document based on a query object sent in the request body containing the target document id and an object of updated attributes and values.
 - POST '/deleteClothing': Deletes a document based on a query object sent in the request body containing the target document id.
 
-### Contact
+## Contact
+
 If you have any questions about this project, please feel free to reach out to me at me@derekw.co.
