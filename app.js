@@ -16,6 +16,10 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
+app.get('/connectionCheck', (req, res) => {
+    res.sendStatus(200);
+});
+
 app.post('/addClothing', async (req, res) => {
     const owner = req.body.owner;
     const type = req.body.type;
