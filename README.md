@@ -7,14 +7,14 @@ Outfit Picker V2 API is a server-side application designed to provide an API int
 ## Features
 
 - Connects to MongoDB to store and retrieve outfit documents.
-- Provides endpoints to perform CRUD operations on outfits.
+- Provides endpoints to perform CRUD operations on outfits and prompt the OpenAI API.
 - Supports query parameters to filter outfits based on various criteria.
 
 ## Getting Started
 
 ### Prerequisites
 
-Before running the Outfit Picker V2 API, make sure you have the following prerequisites installed on yo`ur system:
+Before running the Outfit Picker V2 API, make sure you have the following prerequisites installed on your system:
 
 - Node.js (at least version 18.16.x)
 - npm (Node Package Manager)
